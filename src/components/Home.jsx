@@ -2,25 +2,26 @@ import React from "react";
 
 function Home() {
   return (
-    <section className="bg-white py-20">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-24 ">
-        <div className="flex flex-col w-full md:w-1/2 text-left ">
-          <h1 className="text-4xl md:text-5xl font-bold text-textColor mb-4">
-            Good health Starts with What You
+    <section className="bg-white ">
+      <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-between py-24 ">
+        <div className="flex flex-col w-full md:w-1/2 text-left md:items-start items-center justify-center px-10 ">
+          <h1 className="text-4xl md:text-3xl font-bold text-textColor mb-4">
+            Good health Starts <br /> with What You{" "}
             <span className="text-buttonColor">Eat</span>
           </h1>
+          <div></div>
 
           <p className="text-textColor mb-6">
-            Want to eat more mindfully? Track meals, learn about your habits,
-            and reach your goals with FitFuel.
+            Want to eat more mindfully? Track meals, learn about <br /> your
+            habits, and reach your goals with FitFuel.
           </p>
 
-          <div className="flex space-x-4 mb-6 ">
+          <div className=" flex gap-4 grid-cols-2  mb-6  ">
             <a
               href="#"
-              className="flex items-center border border-gray-300 rounded-lg p-2 px-4 py-3 shadow-md"
+              className="flex items-center border border-gray-300 rounded-lg px-4 py-3 md:px-2 shadow-md"
             >
-              <img src="/Apple.jfif" alt="Apple" className="h-6 mr-4" />
+              <img src="/Apple.jfif" alt="Apple" className="h-6 mr-2" />
               <div>
                 <p className="text-xs text-gray-500">Download on the</p>
                 <p className="text-sm font-semibold text-gray-800">App Store</p>
@@ -28,7 +29,7 @@ function Home() {
             </a>
             <a
               href="#"
-              className="flex items-center border border-gray-300 rounded-lg p-2 px-4 py-3  shadow-md"
+              className="flex items-center border border-gray-300 rounded-lg p-2 px-4 py-3 md:px-2 shadow-md"
             >
               <img src="/google.png" alt="Google Play" className="h-6 mr-2" />
               <div>
@@ -55,7 +56,7 @@ function Home() {
           <img
             src="home.png"
             alt="Home"
-            className="w-full max-w-sm md:max-w-full "
+            className="w-[30rem] max-w-sm md:max-w-full "
           />
         </div>
       </div>
