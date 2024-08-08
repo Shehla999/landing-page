@@ -1,7 +1,8 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { routes } from "../routes";
+import logo from "../assets/images/Vector.png";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -10,17 +11,19 @@ const Header = () => {
     <header className="bg-white shadow-md fixed w-full">
       <div className="container mx-auto p-4 flex justify-between items-center ">
         <div className="flex items-center space-x-4">
-          <img src="/Vector.png" alt="ASL" className="h-8" />
+          <img src={logo} alt="ASL" className="h-8" />
           <span className="text-lg font-bold">FitFuel</span>
         </div>
         <nav className="hidden md:flex space-x-6">
           <ul className="flex space-x-6">
             <li className="text-textColor hover:text-gray-800 cursor-pointer">
-              <a href="#about">About Us</a>
+              <a href="#about" className="text-textColor ">
+                About Us
+              </a>
             </li>
 
             <li className="text-textColor hover:text-gray-800 cursor-pointer">
-              <a href="#features">Features</a>
+              <a href="#feature">Features</a>
             </li>
 
             <li className="text-textColor hover:text-gray-800 cursor-pointer">
@@ -29,6 +32,10 @@ const Header = () => {
 
             <li className="text-textColor hover:text-gray-800 cursor-pointer">
               <a href="#faq">FAQ</a>
+            </li>
+
+            <li className="text-textColor hover:text-gray-800 cursor-pointer">
+              <a href="#footer">Footer</a>
             </li>
           </ul>
         </nav>
@@ -70,6 +77,12 @@ const Header = () => {
             <li className="block py-2 px-4  hover:text-gray-200 cursor-pointer">
               <a href="#faq" onClick={() => setShow(false)}>
                 FAQ
+              </a>
+            </li>
+
+            <li className="block py-2 px-4  hover:text-gray-200 cursor-pointer">
+              <a href="#footer" onClick={() => setShow(false)}>
+                Footer
               </a>
             </li>
           </ul>

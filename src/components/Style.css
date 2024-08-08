@@ -1,0 +1,6 @@
+.promo-section {
+  background-image: url("../assets/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: aqua;
+}

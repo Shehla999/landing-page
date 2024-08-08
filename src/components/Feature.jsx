@@ -2,7 +2,7 @@ import React from "react";
 
 function Feature() {
   return (
-    <div className="items-center py-0 bg-white ">
+    <div className="items-center pt-10 bg-white ">
       <div className="flex justify-center items-center mb-6 ">
         <div className="bg-purple-100 text-purple-500 font-medium py-2 px-12 rounded-sm ">
           Feature
@@ -12,8 +12,8 @@ function Feature() {
       <h2 className="flex justify-center  text-3xl font-bold mb-6">
         Impressive Features
       </h2>
-      <div className="flex justify-center space-x-6">
-        <div className=" grid grid-4 md:grid-6 sm:grid-12 gap-16 p-4 m-4 text-center">
+      <div className="flex justify-center items-center space-x-6">
+        <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg-grid-cols-4 gap-16  text-center">
           <div>
             <div className="flex justify-center p-4  mb-2">
               <img src="/Frame 268.png" />

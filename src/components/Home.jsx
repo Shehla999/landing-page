@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <section className="bg-white ">
+    <section className="bg-white pb-0 ">
       <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-between py-24 ">
         <div className="flex flex-col w-full md:w-1/2 text-left md:items-start items-center justify-center px-10 ">
           <h1 className="text-4xl md:text-3xl font-bold text-textColor mb-4">
