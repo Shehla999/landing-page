@@ -5,12 +5,12 @@ function Home() {
     <section className="bg-white pb-0 ">
       <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-between py-24 ">
         <div className="flex flex-col w-full md:w-1/2 text-left md:items-start items-center justify-center px-10 ">
-          <h1 className="text-4xl md:text-3xl font-bold text-textColor mb-4">
-            Good health Starts <br /> with What You{" "}
+          <h1 className="text-4xl md:text-3xl font-bold text-textColor mb-0">
+            Good health Starts <br />
+            <span>with</span> What You{" "}
             <span className="text-buttonColor">Eat</span>
           </h1>
-          <div></div>
-
+          <div className="underline bg-buttonColor mb-8 w-8 h-1 rounded-full "></div>
           <p className="text-textColor mb-6">
             Want to eat more mindfully? Track meals, learn about <br /> your
             habits, and reach your goals with FitFuel.

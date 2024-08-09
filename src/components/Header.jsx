@@ -1,4 +1,4 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { routes } from "../routes";
@@ -17,25 +17,48 @@ const Header = () => {
         <nav className="hidden md:flex space-x-6">
           <ul className="flex space-x-6">
             <li className="text-textColor hover:text-gray-800 cursor-pointer">
-              <a href="#about" className="text-textColor ">
+              <a
+                href="#about"
+                className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-buttonColor after:transition-all after:duration-300 hover:after:w-full"
+              >
                 About Us
               </a>
             </li>
 
             <li className="text-textColor hover:text-gray-800 cursor-pointer">
-              <a href="#feature">Features</a>
+              <a
+                className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-buttonColor after:transition-all after:duration-300 hover:after:w-full"
+                href="#feature"
+              >
+                Features
+              </a>
             </li>
 
             <li className="text-textColor hover:text-gray-800 cursor-pointer">
-              <a href="#pricing">Pricing</a>
+              <a
+                href="#pricing"
+                className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-buttonColor after:transition-all after:duration-300 hover:after:w-full"
+              >
+                Pricing
+              </a>
             </li>
 
             <li className="text-textColor hover:text-gray-800 cursor-pointer">
-              <a href="#faq">FAQ</a>
+              <a
+                href="#faq"
+                className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-buttonColor after:transition-all after:duration-300 hover:after:w-full"
+              >
+                FAQ
+              </a>
             </li>
 
             <li className="text-textColor hover:text-gray-800 cursor-pointer">
-              <a href="#footer">Footer</a>
+              <a
+                href="#footer"
+                className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-buttonColor after:transition-all after:duration-300 hover:after:w-full"
+              >
+                Footer
+              </a>
             </li>
           </ul>
         </nav>
@@ -50,7 +73,7 @@ const Header = () => {
           className="fixed right-7 top-2  border-2 text-black p-2 focus:outline-none "
           onClick={() => setShow(!show)}
         >
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={show ? faTimes : faBars} />
         </button>
       </div>
       {show && (
@@ -62,7 +85,7 @@ const Header = () => {
               </a>
             </li>
 
-            <li className="block py-2 px-4 hover:text-gray-800 cursor-pointer">
+            <li className="block py-2 px-4 hover:text-gray-800 cursor-pointer ">
               <a href="#features" onClick={() => setShow(false)}>
                 Features
               </a>
